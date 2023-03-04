@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HMTL5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>A imagem irá se alterar com o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="_imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="_imagens/foto-m.png" type="image/png">
+        <img src="_imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em html 5</p>
+    <audio src="_midia/god_rest_ye_merry_gentlmen - dj williams.mp3" controls loop ></audio>
+    <!-- MP3 WAV OGG-->
+    <audio preload="metadata" controls>
+        <source src="_midia/podscat_guanabara.mp3" type="audio/mpeg">
+        <source src="_midia/podscat_guanabara.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio</p>
+    </audio>
+
+    <h1>Reproduzindo Video</h1>
+    <p>Esse video está hospedado no meu servidor!</p>
+    <p><strong>forma simplificada</strong></p>
+    <video src="_midia/video_fullhd.mp4" width="600px" controls loop ></video>
+    <!--Para evitar erro de compatibilidade podemos fazer igual os audios-->
+    <p><strong>Forma com maior compatibilidade</strong></p>
+    <video preload="metadata" controls width="600px">
+        <source src="_midia/video_fullhd.mp4" type="video/mp4">
+        <source src="_midia/video_fullhd.ogg" type="video/ogg">
+        <source src="_midia/video_fullhd.webm" type="video/webm">
+        <p>seu navegador não é compativel com nossos formatos de video</p>
+        <!--A tentativa de carregamento virá na sequencia de cima para baixo-->
+    </video>
+    <h1>Esse vídeo está sendo hospedado externamente</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/h7YIO-Jf7t0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;autoplay" allowfullscreen></iframe>
+</body>
+</html>

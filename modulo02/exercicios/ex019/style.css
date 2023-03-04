@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*
+    em HTML id em CSS é # (Somente um elemento)
+    em HTML class em CSS é . (Vários elementos)
+    ID sobrepõe configuração de Class
+*/
+
+body{
+    background-color: rgb(227, 255, 185);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1#principal{
+    text-align: center;
+    background-color: rgb(53, 89, 0);
+    color: aliceblue;
+}
+h1{
+    color:green
+}
+h2{
+    color: green;
+}
+.basico{
+    color:rgb(32, 166, 32)
+}
+.intermediario{
+    color: rgb(196, 196, 96);
+
+}
+.avancado{
+    color: rgb(222, 106, 106);
+}
