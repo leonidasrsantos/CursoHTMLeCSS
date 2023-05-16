@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 24px;
+        }
+        p{
+            margin-bottom: 24px;
+        }
+       .two-columns{
+        display: flex;
+       }
+       .two-columns .col{
+        display: flex;
+        flex-direction: column;
+        background-color: lawngreen;
+        margin: 15px;
+        padding: 30px;
+       }
+       .gallery{
+        flex-flow: row wrap;
+        display: flex;
+       }
+       .gallery .img{
+        flex: 1 0 20%;
+        height: 50px;
+        background: blue;
+        margin: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="two-columns">
+       <div class="col"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error quis, quae aperiam quasi tempore dolore illo reprehenderit aspernatur, soluta ab repudiandae harum doloremque labore omnis exercitationem, accusamus praesentium. Maxime.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odio possimus eligendi obcaecati, quod accusantium adipisci laborum nemo dolores. Omnis quod enim amet repudiandae aliquam! Facilis voluptatem nostrum ratione necessitatibus.</p></div>
+       <div class="col"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos explicabo non omnis cum excepturi pariatur magni voluptate dolor? Tenetur quae reprehenderit praesentium ullam doloribus obcaecati, saepe doloremque reiciendis repudiandae.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus deserunt assumenda magnam ipsum aliquid, quo quam placeat quasi consequatur at, architecto doloribus eos voluptatem, ullam officiis voluptas. Suscipit, similique?</p>
+        <div class="gallery">
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

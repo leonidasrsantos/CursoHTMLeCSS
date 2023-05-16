@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flex-container{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: yellow;
+            height: 80;
+        }
+        .flex-item{
+            /*flex: flex-grow flex-shrink flex-basis*/
+            flex-grow: 1;
+            flex-basis: 320px;
+            flex-shrink: 1;
+            width: 32%;
+            height: 200px;
+            color: white;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Um</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+    </div>
+</body>
+</html>
